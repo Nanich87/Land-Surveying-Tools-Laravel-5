@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType name="commonPoint">
+        <xs:all minOccurs="1" maxOccurs="1">
+            <xs:element name="id" type="xs:string" />
+            <xs:element name="inputCoordinateSystem" type="point" />
+            <xs:element name="outputCoordinateSystem" type="point" />
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="inputPoint">
+        <xs:all minOccurs="1" maxOccurs="1">
+            <xs:element name="id" type="xs:string" />
+            <xs:element name="inputCoordinateSystem" type="point" />
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="point">
+        <xs:all minOccurs="1" maxOccurs="1">
+            <xs:element name="x" type="xs:decimal" />
+            <xs:element name="y" type="xs:decimal" />
+        </xs:all>
+    </xs:complexType>
+    <xs:element name="points">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="commonPoint" type="commonPoint" minOccurs="3" maxOccurs="50" />
+                <xs:element name="inputPoint" type="inputPoint" minOccurs="1" maxOccurs="500" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,21 @@
+@media (max-width: 640px) {
+    nav > ul > li {
+        float: none;
+    }
+    
+    nav > ul > li > a {
+        display: block;
+    }
+
+    #main-content, #sidebar {
+        float: none;
+        width: 100%;
+    }
+
+    .footer-inner-container {
+        float: none;
+        list-style-type: square;
+        margin: 5px auto;
+        width: 95%;
+    }
+}

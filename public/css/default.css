@@ -1,0 +1,304 @@
+@import
+url(http://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500italic,500,700,700italic&subset=cyrillic-ext,latin-ext);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, main, section, aside, footer {
+    display: block;
+}
+
+body {
+    background: #3c3c3c;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+}
+
+a {
+    color: #3366ff;
+    font-size: 90%;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+h2 {
+    background: #3d3d3d;
+    color: #eeeeee;
+    font-size: 120%;
+    margin: 5px;
+    padding: 5px;
+    text-align: left;
+}
+
+h3 {
+    font-size: 100%;
+    padding: 5px;
+    text-align: left;
+}
+
+.blue-background {
+    background: #3366ff;
+}
+
+.green-background {
+    background: #339900;
+}
+
+.red-background {
+    background: red;
+}
+
+.error {
+    color: #C40D0D;
+}
+
+.center {
+    text-align: center;
+}
+
+.textarea {
+    border: 1px solid #dcdcdc;
+    font-family: 'Courier New';
+    font-size: 80%;
+    margin: 25px auto;
+    padding: 5px;
+    height: 200px;
+    width: 95%;
+}
+
+/* header */
+
+header {
+    background: #2d2d2d;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2d2d2d), color-stop(1, #4d4d4d));
+    background: -o-linear-gradient(bottom, #2d2d2d 0%, #4d4d4d 100%);
+    background: -moz-linear-gradient(bottom, #2d2d2d 0%, #4d4d4d 100%);
+    background: -webkit-linear-gradient(bottom, #2d2d2d 0%, #4d4d4d 100%);
+    background: -ms-linear-gradient(bottom, #2d2d2d 0%, #4d4d4d 100%);
+    background: linear-gradient(to bottom, #2d2d2d 0%, #4d4d4d 100%);
+    width: 100%;
+}
+
+#header-logo {
+    background: url('../images/header-logo.png') center center no-repeat;
+    display: inline-block;
+    height: 96px;
+    margin: 2px 5px 2px 25px;
+    width: 96px;
+}
+
+header > h1 {
+    color: #eeeeee;
+    display: inline-block;
+    font-size: 180%;
+    padding: 5px;
+    text-align: center;
+    vertical-align: top;
+}
+
+/* nav */
+
+nav {
+    background: #4d4d4d;
+    clear: both;
+}
+
+nav > ul {
+    background: #2c2c2c;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2c2c2c), color-stop(1, #3c3c3c));
+    background: -o-linear-gradient(bottom, #2c2c2c 0%, #3c3c3c 100%);
+    background: -moz-linear-gradient(bottom, #2c2c2c 0%, #3c3c3c 100%);
+    background: -webkit-linear-gradient(bottom, #2c2c2c 0%, #3c3c3c 100%);
+    background: -ms-linear-gradient(bottom, #2c2c2c 0%, #3c3c3c 100%);
+    background: linear-gradient(to bottom, #2c2c2c 0%, #3c3c3c 100%);
+    border: 2px solid #000000;
+    list-style-type: none;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 90%;
+}
+
+nav > ul li {
+    float: left;
+}
+
+nav > ul li a {
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 120%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 5px 0 5px;
+    text-decoration: none; 
+}
+
+nav > ul li a:hover {
+    background: #339900;
+}
+
+nav > ul li a img {
+    border: 0px;
+    height: 32px;
+    vertical-align: middle;
+    width: 32px;
+}
+
+#main-wrapper {
+    background: linear-gradient(to bottom, #5d5d5d 0%, #5d5d5d 90%, #5d5d5d 90%, #4d4d4d 90%, #4d4d4d 100%);
+}
+
+main {
+    background: #ffffff;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+    margin: 0 auto;
+    overflow: hidden;
+    width: 90%;
+}
+
+#main-content {
+    float: left;
+    width: 75%;
+}
+
+#sidebar {
+    float: right;
+    width: 25%;
+}
+
+#main-content > section > form {
+    margin: 5px;
+}
+
+#main-content > section > form input[type='submit'] {
+    background: #B7D768;
+    color: #3d3d3d;
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    font-weight: bold;
+    height: 75px;
+    line-height: 75px;
+    text-transform: uppercase;
+    width: 150px;
+}
+
+#main-content > section > form input[type='submit']:hover {
+    background: #339900;
+    color: #ffffff;
+}
+
+#main-content > section > form ul li textarea {
+    border: 1px solid #B7D768;
+    font-family: 'Courier New';
+    font-size: 80%;
+    padding: 5px;
+    height: 200px;
+    width: 75%;
+}
+
+#main-content > section > form ul {
+    list-style-type: none;
+}
+
+#main-content > section > form ul li {
+    list-style-type: none;
+    padding: 2px;
+}
+
+#main-content > section > form ul li label {
+    display: inline-block;
+    font-weight: bold;
+    vertical-align: top;
+    width: 20%;
+}
+
+#main-content > section > form ul li select {
+    border: 1px solid #B7D768;
+    border-radius: 3px;
+    padding: 2px;
+    width: 150px;
+}
+
+#main-content > section > table {
+    font-size: 95%;
+    margin: 5px;
+}
+
+#main-content > section > table thead td, #main-content > section > table tfoot td {
+    background: #3366cc;
+    color: #eeeeee;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+}
+
+.box {
+    display: block;
+    margin-top: 10px;
+}
+
+.inline {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#sidebar > aside > div {
+    padding: 5px;
+}
+
+.social-media-container {
+    background: #4d4d4d;
+    clear: both;
+}
+
+.social-media-container ul {
+    list-style-type: none;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-media-container ul li {
+    display: inline;
+    margin: 10px;
+}
+
+.social-media-container ul li img {
+    border: 1px solid #dedede;
+    border-radius: 3px;
+}
+
+footer {
+    background: #3c3c3c;
+    border-top: 1px solid #000000;
+    clear: both;
+    overflow: hidden;
+    padding: 25px 0;
+    width: 100%;
+}
+
+.footer-inner-container {
+    float: left;
+    list-style-type: square;
+    width: 33%;
+}
+
+.footer-inner-container > h2 {
+    border-radius: 3px;
+    font-size: 115%;
+}
+
+.footer-inner-container ul {
+    list-style-type: square;
+}
+
+.footer-inner-container ul li {
+    color: #eeeeee;
+    font-size: 90%;
+    margin-left: 25px;
+}
